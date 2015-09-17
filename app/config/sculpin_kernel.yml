@@ -1,0 +1,9 @@
+sculpin_content_types:
+    posts:
+        type: path
+        path: _posts
+        permalink: pretty
+        taxonomies:
+            - categories
+sculpin_markdown:
+    parser_class: Sculpin\Bundle\MarkdownBundle\PhpMarkdownExtraParser

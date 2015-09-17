@@ -1,0 +1,9 @@
+/.sculpin/
+/app/cache/*
+/app/logs/*
+/output_*/
+/source/components/
+/source/_posts/*_draft.md
+publish.sh
+sculpin
+sculpin.phar
