@@ -244,3 +244,7 @@ hr {
 ul li dl {
   margin: 0 0 .5em;
 }
+
+pre[class*="language-"] {
+  margin: 1.5em 0;
+}
