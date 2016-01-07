@@ -1,5 +1,6 @@
 ---
 title: Hello, World!
+date: 2015-09-16
 categories:
     - Updates
 ---

@@ -1,5 +1,6 @@
 ---
 title: Composer Path Repositories
+date: 2015-09-19
 categories:
     - Composer
 ---
