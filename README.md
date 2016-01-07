@@ -1,13 +1,25 @@
 Geeki.sh
 ========
 
-Powered by [Sculpin](//sculpin.io).
-Based on the Sculpin [blog skeleton](//github.com/sculpin/sculpin-blog-skeleton),
-built on [Bootstrap](//getbootstrap.com), and hosted on [Digital Ocean](//digitalocean.com).
+Powered by [Sculpin][link-sculpin]. Based on the Sculpin [blog skeleton][link-skeleton],
+built on [Bootstrap][link-bootstrap], and hosted on [Digital Ocean][link-digitalocean] with
+the magic of [Serverpilot][link-serverpilot].
+
+## How this works
+
+- I use [Composer][link-composer] to manage dependencies, in this case, Sculpin.
+- I execute Sculpin commands via `./vendor/bin/sculpin` (in the project root).
+- To deploy, I'm using the `publish.sh` script from the blog skeleton.
 
 ## License
 
-Content in `source/_posts` is &copy; to me, Hannah Warmbier, and may not be used or redistributed without my permission.
+Content in `source/_posts` may not be used or redistributed without my permission.
+As for everything else, [DBAD][link-license]. See [LICENSE.md](LICENSE.md).
 
-As for everything else, [DBAD](//dbad-license.org).
-See [LICENSE.md](LICENSE.md).
+[link-sculpin]: //sculpin.io
+[link-skeleton]: //github.com/sculpin/sculpin-blog-skeleton
+[link-bootstrap]: //getbootstrap.com
+[link-digitalocean]: //digitalocean.com
+[link-serverpilot]: //serverpilot.io
+[link-composer]: //getcomposer
+[link-license]: //dbad-license.org
