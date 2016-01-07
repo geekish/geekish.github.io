@@ -1,10 +1,10 @@
 {% extends "master.twig" %}
 {% block master_content %}
     <div class="container content">
-        <div class="row-fluid">
+        <div class="row">
             {% include "header.twig" %}
         </div>
-        <div class="row-fluid">
+        <div class="row">
             <div class="col-sm-8 col-md-8 col-main">
                 {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
             </div>
@@ -12,7 +12,7 @@
                 {% include "sidebar.twig" %}
             </div>
         </div>
-        <div class="row-fluid">
+        <div class="row">
             {% include "footer.twig" %}
         </div>
     </div>

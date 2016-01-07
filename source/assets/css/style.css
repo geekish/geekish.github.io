@@ -144,29 +144,28 @@ Posts and Pages
   margin: 3rem 0;
 }
 
-.pagination {
+.post-pagination {
   margin: 1rem 0;
   padding: 0;
 }
-.pagination .pagination-item {
+.post-pagination .post-pagination-item {
   color: #aaa;
-  display: inline-block;
   font-size: 1.1em;
   padding-right: 0;
   padding-left: 0;
 }
-.pagination .pagination-item.older {
+.post-pagination .post-pagination-item.older {
   text-align: left;
 }
-.pagination .pagination-item.older:before {
+.post-pagination .post-pagination-item.older:before {
   display: inline-block;
   content: "«";
   width: .75em;
 }
-.pagination .pagination-item.newer {
+.post-pagination .post-pagination-item.newer {
   text-align: right;
 }
-.pagination .pagination-item.newer:after {
+.post-pagination .post-pagination-item.newer:after {
   display: inline-block;
   content: "»";
   width: .75em;

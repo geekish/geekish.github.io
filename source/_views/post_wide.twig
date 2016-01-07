@@ -4,8 +4,8 @@
     <h1 class="post-title">
         <span>{{ page.title }}</span>
         <small class="meta">
-            {{ post.date | date("F jS Y")}}
-            {% if post.meta.categories %}&middot;{% for category in post.meta.categories %}
+            {{ page.date | date("F jS Y")}}
+            {% if page.meta.categories %}&middot;{% for category in page.meta.categories %}
             <a href="{{ site.url }}/category/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}{% endif %}
         </small>
@@ -16,15 +16,15 @@
     <hr>
 </div>
 {% include "comments.twig" %}
-<div class="pagination row-fluid">
-    <div class="col-md-6 pagination-item older">
+<div class="post-pagination row">
+    <div class="col-md-6 post-pagination-item older">
         {% if page.next_post %}
         <a href="{{ site.url }}{{ page.next_post.url }}">Next Post</a>
         {% else %}
         <span>Next Post</span>
         {% endif %}
     </div>
-    <div class="col-md-6 pagination-item newer">
+    <div class="col-md-6 post-pagination-item newer">
         {% if page.previous_post %}
         <a href="{{ site.url }}{{ page.previous_post.url }}">Previous Post</a>
         {% else %}

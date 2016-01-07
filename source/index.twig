@@ -13,7 +13,7 @@ use:
         <h1 class="post-title">
             <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
             <small class="meta">
-                {{ post.date | date("F jS Y")}}
+                {{ post.date | date("F jS Y") }}
                 {% if post.meta.categories %}&middot;{% for category in post.meta.categories %}
                 <a href="{{ site.url }}/category/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
                 {% endfor %}{% endif %}
@@ -27,15 +27,15 @@ use:
     <hr>
     {% endfor %}
 </div>
-<div class="pagination row-fluid">
-    <div class="col-md-6 pagination-item older">
+<div class="post-pagination row">
+    <div class="col-md-6 post-pagination-item older">
         {% if page.pagination.next_page %}
         <a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a></div>
         {% else %}
         <span>Older Posts</span>
         {% endif %}
     </div>
-    <div class="col-md-6 pagination-item newer">
+    <div class="col-md-6 post-pagination-item newer">
         {% if page.pagination.previous_page %}
         <a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>
         {% else %}
