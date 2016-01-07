@@ -4,6 +4,7 @@
 /output_*/
 /source/components/
 /source/_posts/*_draft.md
+/vendor/
 publish.sh
 sculpin
 sculpin.phar

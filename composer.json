@@ -1,0 +1,17 @@
+{
+    "name": "geekish/geeki.sh",
+    "description": "Sculpin source for geeki.sh",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hannah Warmbier",
+            "email": "hannahwarmbier@gmail.com"
+        }
+    ],
+    "require": {
+        "sculpin/sculpin": "^2.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
