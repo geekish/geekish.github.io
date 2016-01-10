@@ -6,7 +6,7 @@ title: Colophon
 
 ## Hardware
 
-Apple everything. 2012 15″ Retina MacBook Pro (Sherlock), 2012 Mac Mini (Watson), iPad Mini 3 (The Doctor), iPhone 6 (River Song).
+Apple everything. 2012 15″ Retina MacBook Pro (Sherlock), 2012 Mac Mini (Watson), iPad Mini 3 (The Doctor), iPhone 6 (River Song). For entertainment purposes, I use a Roku 3 and a Chromecast.
 
 ## Software
 
@@ -14,18 +14,16 @@ I try to keep things simple but I apparently like to try every app possible.<br/
 My most used apps include:
 
 
-- Development
-  :    [Atom](http://atom.io), [Tower](http://git-tower.com), [Vagrant](http://vagrantup.com) ([my setup](http://github.com/geekish/vaprozsh))
+- Development: [Atom](//atom.io), [Kaleidoscope](//kaleidoscopeapp.com), [PHPStorm](//www.jetbrains.com/phpstorm/), [Tower](//git-tower.com), [Vagrant](//vagrantup.com) ([my setup](//github.com/geekish/vaprozsh))
 
-- Entertainment
-  :    [Plex](httP://plex.tv), [Spotify](http://spotify.com)
+- Entertainment: [Plex](//plex.tv), [Spotify](//spotify.com), [Steam](//steamcommunity.com/)
 
-- Utilities
-  :    [Alfred](http://alfredapp.com) (+[Powerpack](https://www.alfredapp.com/powerpack/)), [Chrome](http://google.com/chrome), [Synergy](http://synergy-project.org)
+- Terminal/Command Line: [Homebrew](//brew.sh), [Zsh](//zsh.org) + [Antigen](//github.com/zsh-users/antigen) ([my dotfiles](//github.com/geekish/dotfiles))
 
-- Writing
-  :    [Ulysses](http://ulyssesapp.com)
+- Utilities: [Alfred](//alfredapp.com) + [Powerpack](//www.alfredapp.com/powerpack/), [Chrome](//google.com/chrome), [Synergy](//synergy-project.org)
+
+- Writing: [Ulysses](http://ulyssesapp.com)
 
 
 This website is powered by [Sculpin](//sculpin.io).
-You can [view the source on Github](http://github.com/geekish/geeki.sh).
+You can [view the source on Github](//github.com/geekish/geeki.sh).
