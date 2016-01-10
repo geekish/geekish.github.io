@@ -1,35 +1,44 @@
 {% extends "default.twig" %}
 {% block content_wrapper %}
-<div class="post">
-    <h1 class="post-title">
-        <span>{{ page.title }}</span>
-        <small class="meta">
-            {{ page.date | date("F jS Y") }}
-            {% if page.categories %}&middot;{% for category in page.categories %}
-            <a href="{{ site.url }}/category/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}{% endif %}
-        </small>
-    </h1>
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">
+            <span class="post-date">
+                Posted on
+                <strong>{{ page.date | date("F jS Y") }}</strong>
+            </span>
+            {% if page.categories %}
+            <span class="post-categories">
+                under
+                {% for category in page.categories %}
+                <a href="{{ site.url }}/category/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %},
+                {% endif %}{% endfor %}
+            </span>
+            {% endif %}
+        </p>
+    </header>
     <div>
         {{ page.blocks.content|raw }}
     </div>
-    <hr>
-</div>
-{% include "comments.twig" %}
-<div class="post-pagination row">
-    <div class="col-xs-6 post-pagination-item older">
-        {% if page.next_post %}
-        <a href="{{ site.url }}{{ page.next_post.url }}">Next Post</a>
-        {% else %}
-        <span>Next Post</span>
-        {% endif %}
-    </div>
-    <div class="col-xs-6 post-pagination-item newer">
-        {% if page.previous_post %}
-        <a href="{{ site.url }}{{ page.previous_post.url }}">Previous Post</a>
-        {% else %}
-        <span>Previous Post</span>
-        {% endif %}
-    </div>
-</div>
+    <footer class="post-footer clearfix">
+        <div class="post-pagination row clearfix">
+            <div class="col-xs-6 post-pagination-item older">
+                {% if page.next_post %}
+                <a href="{{ site.url }}{{ page.next_post.url }}">Next Post</a>
+                {% else %}
+                <span>Next Post</span>
+                {% endif %}
+            </div>
+            <div class="col-xs-6 post-pagination-item newer">
+                {% if page.previous_post %}
+                <a href="{{ site.url }}{{ page.previous_post.url }}">Previous Post</a>
+                {% else %}
+                <span>Previous Post</span>
+                {% endif %}
+            </div>
+        </div>
+    </footer>
+    {% include "comments.twig" %}
+</article>
 {% endblock %}

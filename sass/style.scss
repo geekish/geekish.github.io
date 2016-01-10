@@ -108,10 +108,12 @@ Posts and Pages
 
 .page,
 .post {
+    .post-header {
+
+    }
     .page-title,
     .post-title {
-        margin-top: 0;
-        margin-bottom: .5em;
+        margin: 0;
         &, a {
             color: #333;
         }
@@ -120,6 +122,15 @@ Posts and Pages
             a {
                 color: #08c;
             }
+        }
+    }
+    .post-meta {
+        color: #999;
+        margin: .25em 0 .5em;
+        font-size: 18px;
+        strong {
+            color: #777;
+            font-weight: 500;
         }
     }
     .post-link a:after {
@@ -132,6 +143,10 @@ Posts and Pages
     }
     & + hr {
         margin: 3rem 0;
+    }
+    .post-footer {
+        border-top: 1px solid #eee;
+        margin: 3rem 0 1em;
     }
 }
 
@@ -168,6 +183,7 @@ Posts and Pages
 */
 
 .lead {
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.65;
 }

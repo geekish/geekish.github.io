@@ -106,8 +106,7 @@ Posts and Pages
 .page .post-title,
 .post .page-title,
 .post .post-title {
-  margin-top: 0;
-  margin-bottom: .5em;
+  margin: 0;
 }
 .page .page-title, .page .page-title a,
 .page .post-title,
@@ -130,6 +129,17 @@ Posts and Pages
 .post .post-title small a {
   color: #08c;
 }
+.page .post-meta,
+.post .post-meta {
+  color: #999;
+  margin: .25em 0 .5em;
+  font-size: 18px;
+}
+.page .post-meta strong,
+.post .post-meta strong {
+  color: #777;
+  font-weight: 500;
+}
 .page .post-link a:after,
 .post .post-link a:after {
   content: "\f08e";
@@ -143,6 +153,11 @@ Posts and Pages
 .post + hr {
   margin: 3rem 0;
 }
+.page .post-footer,
+.post .post-footer {
+  border-top: 1px solid #eee;
+  margin: 3rem 0 1em;
+}
 
 .post-pagination {
   margin: 1rem 0;
@@ -150,6 +165,7 @@ Posts and Pages
 }
 .post-pagination .post-pagination-item {
   color: #aaa;
+  display: inline-block;
   font-size: 1.1em;
   padding-right: 0;
   padding-left: 0;
@@ -175,6 +191,7 @@ Posts and Pages
 * Typography
 */
 .lead {
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.65;
 }

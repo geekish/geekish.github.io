@@ -32,15 +32,21 @@ use:
   </div>
 {% endfor %}
 
-<div>
 {% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav class="article clearfix">
-    {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Previous Page</span></a>
-    {% endif %}
-    {% if page.pagination.next_page %}
-    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
-    {% endif %}
-    </nav>
-{% endif %}
+<div class="post-pagination row">
+    <div class="col-md-6 post-pagination-item newer">
+        {% if page.pagination.previous_page %}
+        <a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Previous Page</a>
+        {% else %}
+        <span>Newer Posts</span>
+        {% endif %}
+    </div>
+    <div class="col-md-6 post-pagination-item older">
+        {% if page.pagination.next_page %}
+        <a href="{{ site.url }}{{ page.pagination.next_page.url }}">Next Page</a></div>
+        {% else %}
+        <span>Older Posts</span>
+        {% endif %}
+    </div>
 </div>
+{% endif %}
