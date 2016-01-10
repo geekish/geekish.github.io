@@ -15,17 +15,17 @@ After cloning the repo and pulling/checking out the develop branch, I updated my
 
 ~~~.language-js
 {
-...
-"repositories": [
-    {
-        "type": "path",
-        "url": "../lib/route"
-    }
-],
-"require": {
-    "league/route": "*@dev"
-},
-...
+    ...
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../lib/route"
+        }
+    ],
+    "require": {
+        "league/route": "*@dev"
+    },
+    ...
 }
 ~~~
 
