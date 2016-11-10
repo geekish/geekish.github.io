@@ -1,5 +1,7 @@
 title: Geeki.sh
 subtitle: "#!/usr/bin/env php echo 'Hello, World!';"
 
+url: http://localhost:8000
+
 disqus:
     shortname: ""
