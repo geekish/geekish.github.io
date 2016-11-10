@@ -14,13 +14,5 @@
             "email": "beau@dflydev.com",
             "homepage": "http://beausimensen.com"
         }
-    ],
-    "require": {
-        "robloach/component-installer": "*",
-        "components/bootstrap": "~3.0",
-        "components/font-awesome": "~4.4"
-    },
-    "config": {
-        "component-dir": "source/components"
-    }
+    ]
 }

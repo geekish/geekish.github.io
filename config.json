@@ -1,0 +1,24 @@
+{
+    "bower": {
+        "src": [
+            "./bower_components/font-awesome/fonts/fontawesome-webfont.*",
+            "./bower_components/font-awesome/css/font-awesome.min.css",
+            "./bower_components/bootstrap/dist/css/bootstrap.min.css",
+            "./bower_components/bootstrap/dist/js/bootstrap.min.js"
+        ],
+        "dest": "./source/assets/vendor/"
+    },
+    "sass": {
+        "watch": "./res/sass/**/*.scss",
+        "compile": "./res/sass/style.scss",
+        "dest": "./public/assets/css/",
+        "outputStyle": "nested"
+    },
+    "autoprefix": {
+        "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "Firefox ESR"
+        ]
+    }
+}

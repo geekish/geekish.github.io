@@ -1,10 +1,11 @@
 /.sculpin/
-/app/cache/*
-/app/logs/*
 /output_*/
-/source/components/
+/bower_components/
+/node_modules/
+/source/assets/vendor/*
 /source/_posts/*_draft.md
 /vendor/
 publish.sh
 sculpin
 sculpin.phar
+!.gitkeep

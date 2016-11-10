@@ -1,0 +1,23 @@
+{
+  "name": "geekish",
+  "homepage": "http://geeki.sh",
+  "authors": [
+    "Hannah Warmbier <hannahwarmbier@gmail.com>"
+  ],
+  "description": "geeki.sh",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "prism": "^1.5.1"
+  }
+}
