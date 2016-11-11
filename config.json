@@ -9,9 +9,9 @@
         "dest": "./source/assets/vendor/"
     },
     "sass": {
-        "watch": "./res/sass/**/*.scss",
-        "compile": "./res/sass/style.scss",
-        "dest": "./public/assets/css/",
+        "watch": "./sass/**/*.scss",
+        "compile": "./sass/style.scss",
+        "dest": "./source/assets/css/",
         "outputStyle": "nested"
     },
     "autoprefix": {
