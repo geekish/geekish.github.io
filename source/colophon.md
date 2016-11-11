@@ -20,7 +20,7 @@ My most used apps include:
 
 - Terminal/Command Line: [Homebrew](//brew.sh), [Zsh](//zsh.org) + [Antigen](//github.com/zsh-users/antigen) ([my dotfiles](//github.com/geekish/dotfiles))
 
-- Utilities: [1Password](//1password.com) [Alfred](//alfredapp.com) + [Powerpack](//www.alfredapp.com/powerpack/), [Chrome](//google.com/chrome), [Synergy](//synergy-project.org)
+- Utilities: [1Password](//1password.com), [Alfred](//alfredapp.com) + [Powerpack](//www.alfredapp.com/powerpack/), [Chrome](//google.com/chrome), [Synergy](//synergy-project.org)
 
 - Writing: [MacDown](//macdown.uranusjr.com), [Ulysses](//ulyssesapp.com)
 
