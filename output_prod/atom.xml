@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[Geeki.sh]]></title>
+    <link href="//geeki.sh/atom.xml" rel="self"/>
+    <link href="//geeki.sh/"/>
+    <updated>2016-11-11T08:55:06-06:00</updated>
+    <id>//geeki.sh/</id>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Composer Path Repositories]]></title>
+            <link href="//geeki.sh/2015/09/19/composer-path-repositories"/>
+            <updated>2015-09-18T19:00:00-05:00</updated>
+            <id>//geeki.sh/2015/09/19/composer-path-repositories</id>
+            <content type="html"><![CDATA[<p>A recent update of <a href="//getcomposer.org">Composer</a> brought us the new "path" repository type.
+I've been developing packages while I use them in other projects, and this is a much better solution than what I had been using: private <a href="//gitlab.com">Gitlab</a> repositories. It was working well, except that every single change I made to a package had to be committed and pushed to Gitlab, and then I had to request a <code>composer update</code> in the project where I was using the package.</p>
+
+<p>This is also very useful for testing local forks or clones of development branches.
+For example, I've been testing the 2.x version of <a href="//github.com/thephpleague/route"><code>league/route</code></a>, which is under the <code>develop</code> branch.
+After cloning the repo and pulling/checking out the develop branch, I updated my project's <code>composer.json</code>:</p>
+
+<pre><code class="language-js">{
+    ...
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../lib/route"
+        }
+    ],
+    "require": {
+        "league/route": "*@dev"
+    },
+    ...
+}
+</code></pre>
+
+<p>So far this has worked perfectly. Composer symlinks the package into my vendor directory, and if I need to make a change in the package I don't have to worry about git commits or composer updates.</p>
+]]></content>
+        </entry>
+            <entry>
+            <title type="html"><![CDATA[Hello, World!]]></title>
+            <link href="//geeki.sh/2015/09/16/hello-world"/>
+            <updated>2015-09-15T19:00:00-05:00</updated>
+            <id>//geeki.sh/2015/09/16/hello-world</id>
+            <content type="html"><![CDATA[<p>Finally.</p>
+
+<p>I've been intending to use this domain for a techie/geeky/whatever blog for a while. I bounced around from CMS to CMS before trying a few static site generators... <a href="//sculpin.io">Sculpin</a> won me over. What's not to like about writing in <a href="//daringfireball.net/projects/markdown/">Markdown</a> and templating with <a href="//twig.sensiolabs.org">Twig</a>?</p>
+
+<p>This year I've been working on improving my coding skills. I finally started using <a href="//getcomposer.org">Composer</a>. I learned how to use <a href="//sass-lang.com">SASS</a>. I even taught myself a little Python.</p>
+
+<p>I'm just amazed at where I am today. I started developing websites as a preteen when I was into roleplaying and pixel art. I probably started learning PHP in around 2007. PHP has been around for 20 years and I've been using it for 8. Here's to many more.</p>
+]]></content>
+        </entry>
+    </feed>

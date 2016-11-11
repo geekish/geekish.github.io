@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Home &mdash; Geeki.sh</title>
+    <link href="//geeki.sh/assets/vendor/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//geeki.sh/assets/vendor/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="//geeki.sh/assets/vendor/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="//geeki.sh/assets/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="//geeki.sh/assets/css/prism.css" rel="stylesheet" type="text/css" />
+    <link href="//geeki.sh/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" href="//geeki.sh/atom.xml" title="Geeki.sh RSS feed" />
+</head>
+<body>
+        <div class="container content">
+        <div class="row">
+            <header class="masthead">
+    <h2 class="masthead-title">
+        <a href="/" title="Home">Geeki.sh</a>
+        <small>#!/usr/bin/env php echo &#039;Hello, World!&#039;;</small>
+    </h2>
+</header>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-md-8 col-main">
+                <div class="posts">
+        <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">
+                <a href="//geeki.sh/2015/09/19/composer-path-repositories">Composer Path Repositories</a>
+            </h1>
+            <p class="post-meta">
+                <span class="post-date">
+                    Posted on
+                    <strong>September 18th 2015</strong>
+                </span>
+                                <span class="post-categories">
+                    under
+                                        <a href="//geeki.sh/category/Composer">Composer</a>                </span>
+                            </p>
+        </header>
+        <div class="post-content">
+            <p>A recent update of <a href="//getcomposer.org">Composer</a> brought us the new "path" repository type.
+I've been developing packages while I use them in other projects, and this is a much better solution than what I had been using: private <a href="//gitlab.com">Gitlab</a> repositories. It was working well, except that every single change I made to a package had to be committed and pushed to Gitlab, and then I had to request a <code>composer update</code> in the project where I was using the package.</p>
+
+<p>This is also very useful for testing local forks or clones of development branches.
+For example, I've been testing the 2.x version of <a href="//github.com/thephpleague/route"><code>league/route</code></a>, which is under the <code>develop</code> branch.
+After cloning the repo and pulling/checking out the develop branch, I updated my project's <code>composer.json</code>:</p>
+
+<pre><code class="language-js">{
+    ...
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../lib/route"
+        }
+    ],
+    "require": {
+        "league/route": "*@dev"
+    },
+    ...
+}
+</code></pre>
+
+<p>So far this has worked perfectly. Composer symlinks the package into my vendor directory, and if I need to make a change in the package I don't have to worry about git commits or composer updates.</p>
+
+                    </div>
+    </article>
+    <hr>
+        <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">
+                <a href="//geeki.sh/2015/09/16/hello-world">Hello, World!</a>
+            </h1>
+            <p class="post-meta">
+                <span class="post-date">
+                    Posted on
+                    <strong>September 15th 2015</strong>
+                </span>
+                                <span class="post-categories">
+                    under
+                                        <a href="//geeki.sh/category/Updates">Updates</a>                </span>
+                            </p>
+        </header>
+        <div class="post-content">
+            <p>Finally.</p>
+
+<p>I've been intending to use this domain for a techie/geeky/whatever blog for a while. I bounced around from CMS to CMS before trying a few static site generators... <a href="//sculpin.io">Sculpin</a> won me over. What's not to like about writing in <a href="//daringfireball.net/projects/markdown/">Markdown</a> and templating with <a href="//twig.sensiolabs.org">Twig</a>?</p>
+
+<p>This year I've been working on improving my coding skills. I finally started using <a href="//getcomposer.org">Composer</a>. I learned how to use <a href="//sass-lang.com">SASS</a>. I even taught myself a little Python.</p>
+
+<p>I'm just amazed at where I am today. I started developing websites as a preteen when I was into roleplaying and pixel art. I probably started learning PHP in around 2007. PHP has been around for 20 years and I've been using it for 8. Here's to many more.</p>
+
+                    </div>
+    </article>
+    <hr>
+    </div>
+<div class="post-pagination row clearfix">
+    <div class="col-md-6 post-pagination-item older">
+                <span>Older Posts</span>
+            </div>
+    <div class="col-md-6 post-pagination-item newer">
+                <span>Newer Posts</span>
+            </div>
+</div>            </div>
+            <div class="col-sm-4 col-md-4 col-sidebar">
+                <div class="well well-about">
+    <h3>About the Geek</h3>
+<p>I am a 25 year old Apple slave, PHP geek, consumer of macaroni and cheese and wine, and collector of everything Stormtrooper and TARDIS. This is the place where I write about everything geekish.</p>
+</div>
+<div class="well well-nav clearfix">
+    <div class="col-sm-12 col-md-6 col-nav">
+        <h3>Navigate</h3>
+<ul class="nav nav-pills nav-stacked">
+    <li><a href="/archive">Archive</a></li>
+    <li><a href="/colophon">Colophon</a></li>
+    <li><a href="/atom.xml">RSS Feed</a></li>
+</ul>
+    </div>
+    <div class="col-sm-12 col-md-6 col-nav">
+        <h3>Elsewhere</h3>
+<ul class="nav nav-pills nav-stacked">
+    <li><a href="//github.com/geekish">Github</a></li>
+    <li><a href="//last.fm/user/r4dical">Last.fm</a></li>
+    <li><a href="//twitter.com/hannahwarmbier">Twitter</a></li>
+</ul>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="row">
+            <footer class="footer">
+    <p>
+        &copy; 2015 to <a href="//hannahwarmbier.com">Hannah Warmbier</a>.
+        Powered by <a href="//sculpin.io">Sculpin</a>.
+        <a href="//github.com/geekish/geeki.sh" title="View Source on Github"><i class="fa fa-github-alt"></i></a>
+    </p>
+</footer>
+        </div>
+    </div>
+    <script src="//geeki.sh/assets/js/prism.js"></script>
+</body>
+</html>
