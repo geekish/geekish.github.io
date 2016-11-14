@@ -6,7 +6,6 @@
 /source/assets/vendor/*
 /source/_posts/*_draft.md
 /vendor/
-publish.sh
 sculpin
 sculpin.phar
 !.gitkeep
