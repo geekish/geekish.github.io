@@ -15,15 +15,7 @@ gulp bower
 gulp sass
 ````
 
-Build source:
-```` bash
-./vendor/bin/sculpin generate --env=prod
-````
-
-Commit changes to develop branch and run:
-```` bash
-git push origin `git subtree split --prefix output_prod develop`:master --force
-````
+Run `./publish.sh` to commit any changes, generate the site, and publish to master.
 
 ## License
 
