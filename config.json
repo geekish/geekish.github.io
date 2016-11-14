@@ -4,9 +4,13 @@
             "./bower_components/font-awesome/fonts/fontawesome-webfont.*",
             "./bower_components/font-awesome/css/font-awesome.min.css",
             "./bower_components/bootstrap/dist/css/bootstrap.min.css",
-            "./bower_components/bootstrap/dist/js/bootstrap.min.js"
+            "./bower_components/bootstrap/dist/js/bootstrap.min.js",
+            "./bower_components/prism/themes/prism.css"
         ],
         "dest": "./source/assets/vendor/"
+    },
+    "prism": {
+        "lang": "core+markup+css+clike+javascript+bash+css-extras+git+markdown+php+php-extras+scss+twig+yaml"
     },
     "sass": {
         "watch": "./source/assets/sass/**/*.scss",
