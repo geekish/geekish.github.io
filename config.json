@@ -9,8 +9,8 @@
         "dest": "./source/assets/vendor/"
     },
     "sass": {
-        "watch": "./sass/**/*.scss",
-        "compile": "./sass/style.scss",
+        "watch": "./source/assets/sass/**/*.scss",
+        "compile": "./source/assets/sass/style.scss",
         "dest": "./source/assets/css/",
         "outputStyle": "nested"
     },

@@ -1,3 +1,5 @@
+sculpin:
+    ignore: ["**/*.scss"]
 sculpin_content_types:
     posts:
         type: path
