@@ -1,51 +1,25 @@
-/*
-Defaults n shizz
-*/
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic);
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+$border-light: #eee;
+$border-dark: #ddd;
 
 body {
-    background: #fff;
     color: #515151;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     line-height: 1.75;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
 }
-
-/*
-Structure
-*/
 
 .container {
     padding-left:  0;
     padding-right: 0;
-    margin-left:  auto;
-    margin-right: auto;
     max-width: 960px;
+
     &.wide {
         max-width: 800px;
     }
 }
 
-.site-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.col-header {
-    padding: 0;
-}
-
 .masthead {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $border-dark;
     margin-bottom: 3rem;
     padding: 2rem 0;
 
@@ -68,20 +42,24 @@ Structure
 .col-sidebar {
     line-height: 1.65;
     padding-right: 0;
+
     .container.wide & {
-        border-top: 1px solid #eee;
+        border-top: 1px solid $border-dark;
         padding: 2rem 0;
         margin-top: 2.5rem;
     }
+
     .well {
         background: #fff;
         border: 0;
         box-shadow: 0 0 0 0;
         padding: 0;
+
         &-about h3 {
             margin-top: 10px;
         }
     }
+
     .col-nav {
         padding-left:0;
         padding-right:0;
@@ -89,6 +67,7 @@ Structure
             text-decoration: underline;
         }
     }
+
     .nav-pills>li>a {
         background: #fff;
         padding: 0;
@@ -99,24 +78,19 @@ Structure
     margin-top: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $border-dark;
 }
-
-/*
-Posts and Pages
-*/
 
 .page,
 .post {
-    .post-header {
-
-    }
     .page-title,
     .post-title {
         margin: 0;
+
         &, a {
             color: #333;
         }
+
         small {
             display: block;
             a {
@@ -124,15 +98,18 @@ Posts and Pages
             }
         }
     }
+
     .post-meta {
         color: #999;
         margin: .25em 0 .5em;
         font-size: 18px;
+
         strong {
             color: #777;
             font-weight: 500;
         }
     }
+
     .post-link a:after {
         content: "\f08e";
         display: inline-block;
@@ -141,11 +118,13 @@ Posts and Pages
         font-weight: 400;
         margin-left: .5em;
     }
+
     & + hr {
         margin: 3rem 0;
     }
+
     .post-footer {
-        border-top: 1px solid #eee;
+        border-top: 1px solid $border-light;
         margin: 3rem 0 1em;
     }
 }
@@ -153,22 +132,27 @@ Posts and Pages
 .post-pagination {
     margin: 1rem 0;
     padding: 0;
+
     .post-pagination-item {
         color: #aaa;
         display:inline-block;
         font-size: 1.1em;
         padding-right: 0;
         padding-left: 0;
+
         &.older {
             text-align: left;
+
             &:before {
                 display:inline-block;
                 content:"«";
                 width:.75em;
             }
         }
+
         &.newer {
             text-align: right;
+
             &:after {
                 display:inline-block;
                 content:"»";
@@ -177,10 +161,6 @@ Posts and Pages
         }
     }
 }
-
-/**
-* Typography
-*/
 
 .lead {
     font-size: 20px;
@@ -196,11 +176,13 @@ h4,
 h5,
 h6 {
     font-weight: 600;
+
     small {
         color: #999;
         display: block;
         margin: .5em 0;
     }
+
     &, & a {
         color: #333;
     }
@@ -208,6 +190,7 @@ h6 {
 
 h1 {
     font-size: 28px;
+
     small {
         font-size: 18px;
     }
@@ -215,6 +198,7 @@ h1 {
 
 h2 {
     font-size: 24px;
+
     small {
         font-size: 16px;
     }
@@ -222,6 +206,7 @@ h2 {
 
 h3 {
     font-size: 18px;
+
     small {
         font-size: 14px;
     }
@@ -231,7 +216,7 @@ hr {
     position: relative;
     margin: 2rem 0;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid $border-light;
     border-bottom: 1px solid #fff;
 }
 

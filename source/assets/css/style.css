@@ -1,41 +1,18 @@
 @charset "UTF-8";
-/*
-Defaults n shizz
-*/
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic);
-* {
-  box-sizing: border-box; }
-
 body {
-  background: #fff;
   color: #515151;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
-  line-height: 1.75;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  line-height: 1.75; }
 
-/*
-Structure
-*/
 .container {
   padding-left: 0;
   padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 960px; }
   .container.wide {
     max-width: 800px; }
 
-.site-container {
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
-.col-header {
-  padding: 0; }
-
 .masthead {
-  background: #fff;
   border-bottom: 1px solid #ddd;
   margin-bottom: 3rem;
   padding: 2rem 0; }
@@ -53,7 +30,7 @@ Structure
   line-height: 1.65;
   padding-right: 0; }
   .container.wide .col-sidebar {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
     padding: 2rem 0;
     margin-top: 2.5rem; }
   .col-sidebar .well {
@@ -78,9 +55,6 @@ Structure
   padding-bottom: 2rem;
   border-top: 1px solid #ddd; }
 
-/*
-Posts and Pages
-*/
 .page .page-title,
 .page .post-title,
 .post .page-title,
@@ -155,9 +129,6 @@ Posts and Pages
         content: "»";
         width: .75em; }
 
-/**
-* Typography
-*/
 .lead {
   font-size: 20px;
   font-weight: 500;
