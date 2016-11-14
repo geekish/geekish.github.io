@@ -11,7 +11,7 @@ if git diff-index --quiet HEAD --; then
 fi
 
 git checkout develop
-sculpin generate --env=prod
+./vendor/bin/sculpin generate --env=prod
 
 git add *
 git commit -m "$1"
