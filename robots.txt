@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /blog/tags/
 Disallow: /blog/categories/
 
 Sitemap: //geeki.sh/sitemap.xml

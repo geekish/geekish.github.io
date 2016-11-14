@@ -1,145 +1,94 @@
 @charset "UTF-8";
-/*
-Defaults n shizz
-*/
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic);
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
-  background: #fff;
   color: #515151;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
-  line-height: 1.75;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+  line-height: 1.75; }
 
-/*
-Structure
-*/
 .container {
   padding-left: 0;
   padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 960px;
-}
-.container.wide {
-  max-width: 800px;
-}
-
-.site-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.col-header {
-  padding: 0;
-}
+  max-width: 960px; }
+  .container.wide {
+    max-width: 800px; }
 
 .masthead {
-  background: #fff;
   border-bottom: 1px solid #ddd;
   margin-bottom: 3rem;
-  padding: 2rem 0;
-}
-.masthead .collapse {
-  position: relative;
-}
-.masthead, .masthead a, .masthead a:hover {
-  color: #303030;
-}
-.masthead small {
-  margin: .5em 0;
-}
+  padding: 2rem 0; }
+  .masthead .collapse {
+    position: relative; }
+  .masthead, .masthead a, .masthead a:hover {
+    color: #303030; }
+  .masthead small {
+    margin: .5em 0; }
 
 .col-main {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 .col-sidebar {
   line-height: 1.65;
-  padding-right: 0;
-}
-.container.wide .col-sidebar {
-  border-top: 1px solid #eee;
-  padding: 2rem 0;
-  margin-top: 2.5rem;
-}
-.col-sidebar .well {
-  background: #fff;
-  border: 0;
-  box-shadow: 0 0 0 0;
-  padding: 0;
-}
-.col-sidebar .well-about h3 {
-  margin-top: 10px;
-}
-.col-sidebar .col-nav {
-  padding-left: 0;
-  padding-right: 0;
-}
-.col-sidebar .col-nav a:hover {
-  text-decoration: underline;
-}
-.col-sidebar .nav-pills > li > a {
-  background: #fff;
-  padding: 0;
-}
+  padding-right: 0; }
+  .container.wide .col-sidebar {
+    border-top: 1px solid #ddd;
+    padding: 2rem 0;
+    margin-top: 2.5rem; }
+  .col-sidebar .well {
+    background: #fff;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    padding: 0; }
+    .col-sidebar .well-about h3 {
+      margin-top: 10px; }
+  .col-sidebar .col-nav {
+    padding-left: 0;
+    padding-right: 0; }
+    .col-sidebar .col-nav a:hover {
+      text-decoration: underline; }
+  .col-sidebar .nav-pills > li > a {
+    background: #fff;
+    padding: 0; }
 
 .footer {
   margin-top: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #ddd;
-}
+  border-top: 1px solid #ddd; }
 
-/*
-Posts and Pages
-*/
 .page .page-title,
 .page .post-title,
 .post .page-title,
 .post .post-title {
-  margin: 0;
-}
-.page .page-title, .page .page-title a,
-.page .post-title,
-.page .post-title a,
-.post .page-title,
-.post .page-title a,
-.post .post-title,
-.post .post-title a {
-  color: #333;
-}
-.page .page-title small,
-.page .post-title small,
-.post .page-title small,
-.post .post-title small {
-  display: block;
-}
-.page .page-title small a,
-.page .post-title small a,
-.post .page-title small a,
-.post .post-title small a {
-  color: #08c;
-}
+  margin: 0; }
+  .page .page-title, .page .page-title a,
+  .page .post-title,
+  .page .post-title a,
+  .post .page-title,
+  .post .page-title a,
+  .post .post-title,
+  .post .post-title a {
+    color: #333; }
+  .page .page-title small,
+  .page .post-title small,
+  .post .page-title small,
+  .post .post-title small {
+    display: block; }
+    .page .page-title small a,
+    .page .post-title small a,
+    .post .page-title small a,
+    .post .post-title small a {
+      color: #08c; }
+
 .page .post-meta,
 .post .post-meta {
   color: #999;
   margin: .25em 0 .5em;
-  font-size: 18px;
-}
-.page .post-meta strong,
-.post .post-meta strong {
-  color: #777;
-  font-weight: 500;
-}
+  font-size: 18px; }
+  .page .post-meta strong,
+  .post .post-meta strong {
+    color: #777;
+    font-weight: 500; }
+
 .page .post-link a:after,
 .post .post-link a:after {
   content: "\f08e";
@@ -147,54 +96,44 @@ Posts and Pages
   font-family: "FontAwesome";
   font-size: .75em;
   font-weight: 400;
-  margin-left: .5em;
-}
+  margin-left: .5em; }
+
 .page + hr,
 .post + hr {
-  margin: 3rem 0;
-}
+  margin: 3rem 0; }
+
 .page .post-footer,
 .post .post-footer {
   border-top: 1px solid #eee;
-  margin: 3rem 0 1em;
-}
+  margin: 3rem 0 1em; }
 
 .post-pagination {
   margin: 1rem 0;
-  padding: 0;
-}
-.post-pagination .post-pagination-item {
-  color: #aaa;
-  display: inline-block;
-  font-size: 1.1em;
-  padding-right: 0;
-  padding-left: 0;
-}
-.post-pagination .post-pagination-item.older {
-  text-align: left;
-}
-.post-pagination .post-pagination-item.older:before {
-  display: inline-block;
-  content: "«";
-  width: .75em;
-}
-.post-pagination .post-pagination-item.newer {
-  text-align: right;
-}
-.post-pagination .post-pagination-item.newer:after {
-  display: inline-block;
-  content: "»";
-  width: .75em;
-}
+  padding: 0; }
+  .post-pagination .post-pagination-item {
+    color: #aaa;
+    display: inline-block;
+    font-size: 1.1em;
+    padding-right: 0;
+    padding-left: 0; }
+    .post-pagination .post-pagination-item.older {
+      text-align: left; }
+      .post-pagination .post-pagination-item.older:before {
+        display: inline-block;
+        content: "«";
+        width: .75em; }
+    .post-pagination .post-pagination-item.newer {
+      text-align: right; }
+      .post-pagination .post-pagination-item.newer:after {
+        display: inline-block;
+        content: "»";
+        width: .75em; }
 
-/**
-* Typography
-*/
 .lead {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.65;
-}
+  margin-top: .25em; }
 
 h1,
 h2,
@@ -202,65 +141,53 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  color: #999;
-  display: block;
-  margin: .5em 0;
-}
-h1, h1 a,
-h2,
-h2 a,
-h3,
-h3 a,
-h4,
-h4 a,
-h5,
-h5 a,
-h6,
-h6 a {
-  color: #333;
-}
+  font-weight: 600; }
+  h1 small,
+  h2 small,
+  h3 small,
+  h4 small,
+  h5 small,
+  h6 small {
+    color: #999;
+    display: block;
+    margin: .5em 0; }
+  h1, h1 a,
+  h2,
+  h2 a,
+  h3,
+  h3 a,
+  h4,
+  h4 a,
+  h5,
+  h5 a,
+  h6,
+  h6 a {
+    color: #333; }
 
 h1 {
-  font-size: 28px;
-}
-h1 small {
-  font-size: 18px;
-}
+  font-size: 28px; }
+  h1 small {
+    font-size: 18px; }
 
 h2 {
-  font-size: 24px;
-}
-h2 small {
-  font-size: 16px;
-}
+  font-size: 24px; }
+  h2 small {
+    font-size: 16px; }
 
 h3 {
-  font-size: 18px;
-}
-h3 small {
-  font-size: 14px;
-}
+  font-size: 18px; }
+  h3 small {
+    font-size: 14px; }
 
 hr {
   position: relative;
   margin: 2rem 0;
   border: 0;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
-}
+  border-bottom: 1px solid #fff; }
 
 ul li dl {
-  margin: 0 0 .5em;
-}
+  margin: 0 0 .5em; }
 
 pre[class*="language-"] {
-  margin: 1.5em 0;
-}
+  margin: 1.5em 0; }
