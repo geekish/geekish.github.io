@@ -1,4 +1,3 @@
-/.sculpin/
 /output_*/
 !/output_prod/
 /bower_components/
@@ -6,6 +5,4 @@
 /source/assets/vendor/*
 /source/_posts/*_draft.md
 /vendor/
-sculpin
-sculpin.phar
 !.gitkeep
