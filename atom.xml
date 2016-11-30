@@ -3,13 +3,13 @@
     <title><![CDATA[Geeki.sh]]></title>
     <link href="//geeki.sh/atom.xml" rel="self"/>
     <link href="//geeki.sh/"/>
-    <updated>2016-11-14T14:29:29-06:00</updated>
+    <updated>2016-11-30T04:01:59+00:00</updated>
     <id>//geeki.sh/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
             <title type="html"><![CDATA[Composer Path Repositories]]></title>
             <link href="//geeki.sh/2015/09/19/composer-path-repositories"/>
-            <updated>2015-09-18T19:00:00-05:00</updated>
+            <updated>2015-09-19T00:00:00+00:00</updated>
             <id>//geeki.sh/2015/09/19/composer-path-repositories</id>
             <content type="html"><![CDATA[<p>A recent update of <a href="//getcomposer.org">Composer</a> brought us the new "path" repository type.
 I've been developing packages while I use them in other projects, and this is a much better solution than what I had been using: private <a href="//gitlab.com">Gitlab</a> repositories. It was working well, except that every single change I made to a package had to be committed and pushed to Gitlab, and then I had to request a <code>composer update</code> in the project where I was using the package.</p>
@@ -39,7 +39,7 @@ After cloning the repo and pulling/checking out the develop branch, I updated my
             <entry>
             <title type="html"><![CDATA[Hello, World!]]></title>
             <link href="//geeki.sh/2015/09/16/hello-world"/>
-            <updated>2015-09-15T19:00:00-05:00</updated>
+            <updated>2015-09-16T00:00:00+00:00</updated>
             <id>//geeki.sh/2015/09/16/hello-world</id>
             <content type="html"><![CDATA[<p>Finally.</p>
 
