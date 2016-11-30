@@ -1,0 +1,53 @@
+==================================================================
+https://keybase.io/geekish
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://geeki.sh
+  * I am geekish (https://keybase.io/geekish) on keybase.
+  * I have a public key ASCn8xGqB38xu57maDrCbNHZ2PQSgOV603h8gg9Mvj23Qgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120a7f311aa077f31bb9ee6683ac26cd1d9d8f41280e57ad3787c820f4cbe3db7420a",
+            "host": "keybase.io",
+            "kid": "0120a7f311aa077f31bb9ee6683ac26cd1d9d8f41280e57ad3787c820f4cbe3db7420a",
+            "uid": "9ff4aa458055a2fa5e5231a221229319",
+            "username": "geekish"
+        },
+        "service": {
+            "hostname": "geeki.sh",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1480478228,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1480478155,
+        "hash": "831a2144066e06052ddc11ca15ad206745c16af82ad96d0bee6eb32d3c2ec67738def0f15519c1f536d2f447f42dc3b1fa80012e183c266c2ac71ebdb6dc8491",
+        "seqno": 741244
+    },
+    "prev": "697f9a75f5ace381b30ce915adfac13af234cdf175789e7ae5f756ec36d1eae7",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgp/MRqgd/Mbue5mg6wmzR2dj0EoDletN4fIIPTL49t0IKp3BheWxvYWTFAu57ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYTdmMzExYWEwNzdmMzFiYjllZTY2ODNhYzI2Y2QxZDlkOGY0MTI4MGU1N2FkMzc4N2M4MjBmNGNiZTNkYjc0MjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYTdmMzExYWEwNzdmMzFiYjllZTY2ODNhYzI2Y2QxZDlkOGY0MTI4MGU1N2FkMzc4N2M4MjBmNGNiZTNkYjc0MjBhIiwidWlkIjoiOWZmNGFhNDU4MDU1YTJmYTVlNTIzMWEyMjEyMjkzMTkiLCJ1c2VybmFtZSI6ImdlZWtpc2gifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImdlZWtpLnNoIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ4MDQ3ODIyOCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDgwNDc4MTU1LCJoYXNoIjoiODMxYTIxNDQwNjZlMDYwNTJkZGMxMWNhMTVhZDIwNjc0NWMxNmFmODJhZDk2ZDBiZWU2ZWIzMmQzYzJlYzY3NzM4ZGVmMGYxNTUxOWMxZjUzNmQyZjQ0N2Y0MmRjM2IxZmE4MDAxMmUxODNjMjY2YzJhYzcxZWJkYjZkYzg0OTEiLCJzZXFubyI6NzQxMjQ0fSwicHJldiI6IjY5N2Y5YTc1ZjVhY2UzODFiMzBjZTkxNWFkZmFjMTNhZjIzNGNkZjE3NTc4OWU3YWU1Zjc1NmVjMzZkMWVhZTciLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECQy4RNIZBdpdIH8l8+rSCDSaNP6DG5wyoMPHYet4iZ8HF265REZlBuycCxZzvZbRa7fuHLz4DgWjeAti9Xz6gPqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgNA0OgiXb/rtZN43gkRZT4ie/uqG5Yv57y2bhj+czWn6jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/geekish
+==================================================================
