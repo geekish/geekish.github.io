@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 if [ $# -ne 1 ]; then
-    echo "Usage: ./bin/publish \"commit message\""
-    exit 1;
+  echo "Usage: ./bin/publish \"commit message\""
+  exit 1;
 fi
 
 if git diff-index --quiet HEAD --; then
-    echo "No changes to commit."
-    exit 1;
+  echo "No changes to commit."
+  exit 1;
 fi
 
 git checkout develop
