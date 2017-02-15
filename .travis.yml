@@ -16,7 +16,7 @@ script:
   - gulp build:assets
   - vendor/bin/sculpin generate --env=prod
 after_success:
-  - 'netlify deploy --site-id="$NETLIFY_ID" --access-token="$NETLIFY_TOKEN"'
+  - 'netlify deploy --path=output_prod --site-id="$NETLIFY_ID" --access-token="$NETLIFY_TOKEN"'
 branches:
   only:
     - develop
