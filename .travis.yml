@@ -1,0 +1,22 @@
+language: php
+php:
+  - "7.1"
+cache:
+  directories:
+    - $HOME/.composer/cache
+env:
+  global:
+    - secure: "Eli2bwFBuO+WrN8/Zb4aAlBJWc99dTTWe+9qMswRYd4AZIP4OUG6UA/xtmFlgX3yUKjwjATR8WHlE0AQXBtNikXwNAvJBpcALmTizA9EG7CuFIVVr13HZyRCwc18XO6Qwz5+gfUhdExLrGmRY6rzYy/tdiqXha5xrCAhwuNPyte3o2YaraUVvC0b5WYzgVvYx4G+xNOz4yhODA20gTCTgrBdrPBnNv2C3f2iIR5+wOgrm26gNgCWoyVmSZo591hN0HUMnVarmOkSqRyGXw/0MSkd4w0ktz0bd1s/u0SlFIH+jxfbfXA2RVUpAXRcFN1PaJ00PqbMEilGZrPkIjz7FYAenktDjY/2WCogauJcLtTHNW6q9LYuJIRZjunek+Idappaw3+ekBlGVmUAo1d/FZyI4FCQYZaR5MogTavPsxYmaxz0SNoOjT6bCJxEoQB5afvvuvk/FfyW1KUGfbNOqTD1OCfwBpW40JGqi8EkSW7ysbJ3qdgY5BJrUPz8SwYp36Ge6WQoKAgnOs8CAWzcU4ewgJbJAymPth/jio53CRGbxwiw2Ug3InucFDSZvPPPmElKVVotFV4CpeQGud3BUFAbqdnReqLmpWRLNfiRr6wfbTlJiwFjcMYrU8uaKcCXNBua+drFgQbEKwUXNTJk6bPHFfFgzzNhWhIN2m5dubM="
+    - secure: "k7UnrY8o1TrN6ptY7f/EbDtMk0iAJg2i+5VHBav26rHO4zqDqTOjog4cN+n7/BIUOgmiDQuh0YrdUKSuDVLC9+F5ddmp7poKrmrJLLKwWE9ct160x3BqkZYlGaXxW3tOTrdILzdHHaqZqDqb8O22LrvlKVJYArAhpicMT7hToaC56vhMoJmsB8MRwbZIhZ8EKox1Q9a4i+hPJw6D2Copv8QWOsWfnJsVsBb7khdH75JCo9peOWPH4vjnBxygBDbH8FFhk032moSgN0LoswvO7jr+MnLEFfEXKhpYjywLgWm5Z891IsLJsN8ROfotOP6ud68jMD+5+zH/ScYME7QDU74lrBj2aYuelrbSfi9ZcJC43XXozXgdiZpPUpn7ASUAZczeoLnUJVqHsR0/R4sJ4pg0rO1ffRGBm/xVH8dVaqUWM1pbCEawl/ud4Ln8Bdkw1i2A997drm5kh2RN7fmLKCnqMC70i+3roZTPdnVlfzxhai2+H7JM0MBSXgrOPXfPbW9DETYBMnzG1MRyHZrqJug9umy9DbNM9B4TEi/rI6ZPtdq+doqq4b+HRhHgio6v2HNhTntyE1LIBzN32iW9eLXe1vzkCkCy3GUZ5HiTrwzcAvm5GW3v9Qt4b6O+QXcheuuEJ1pCB6NS2jy1DizUVhSmWP8GgthXiJlo3f3dRGg="
+before_script:
+  - npm install -g gulp-cli netlify-cli
+  - npm install
+  - composer install  --prefer-dist --no-progress
+script:
+  - gulp build:assets
+  - vendor/bin/sculpin generate --env=prod
+after_success:
+  - publish.sh
+branches:
+  only:
+    - develop

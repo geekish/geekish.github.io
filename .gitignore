@@ -1,7 +1,7 @@
 /output_*/
-!/output_prod/
 /node_modules/
 /source/assets/vendor/*
 /source/_posts/*_draft.md
 /vendor/
 !.gitkeep
+.netlify
