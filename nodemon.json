@@ -1,0 +1,13 @@
+{
+  "exec": "./vendor/bin/sculpin generate --ansi --watch --server",
+  "verbose": true,
+  "ignore": ["*.test.js", "fixtures/*"],
+  "watch": [
+    "app/**/*.yml",
+    "source/**/*"
+  ],
+  "ext": "js,json,php,twig,yaml",
+  "port": 8080,
+  "stdout": true,
+  "verbose": true
+}

@@ -1,11 +1,11 @@
 {
-  "bower": {
+  "assets": {
     "src": [
-      "./bower_components/font-awesome/fonts/fontawesome-webfont.*",
-      "./bower_components/font-awesome/css/font-awesome.min.css",
-      "./bower_components/bootstrap/dist/css/bootstrap.min.css",
-      "./bower_components/bootstrap/dist/js/bootstrap.min.js",
-      "./bower_components/prism/themes/prism.css"
+      "./node_modules/font-awesome/fonts/fontawesome-webfont.*",
+      "./node_modules/font-awesome/css/font-awesome.min.css",
+      "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "./node_modules/prism/themes/prism.css"
     ],
     "dest": "./source/assets/vendor/"
   },

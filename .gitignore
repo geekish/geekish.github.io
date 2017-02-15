@@ -1,6 +1,5 @@
 /output_*/
 !/output_prod/
-/bower_components/
 /node_modules/
 /source/assets/vendor/*
 /source/_posts/*_draft.md
